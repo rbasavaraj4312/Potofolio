@@ -5,6 +5,7 @@ import ScrollFloat from "../components/ui/ScrollFloat.jsx";
 import { motion } from "motion/react";
 import { LampContainer } from "../components/ui/lamp.jsx";
 import photo2 from "../assets/photo2.png";
+import resume from "../assets/Basavaraj_Resume.pdf";
 
 const About = () => {
   return (
@@ -58,7 +59,7 @@ const About = () => {
             </p>
 
             <a
-              href="/files/Basavaraj_Resume.pdf"
+              href={resume}
               download
               className="inline-block px-6 py-2 rounded-lg text-white font-bold 
               bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 
