@@ -1,5 +1,9 @@
 import React from "react";
 import CircularText from "../components/ui/CircularText";
+import photo from "../assets/photo.jpeg";
+import mail from "../assets/mail.png";
+import linkedin from "../assets/linkedin.png";
+import git from "../assets/git.png";
 
 const Home = () => {
   return (
@@ -11,7 +15,7 @@ const Home = () => {
         <div className="relative flex justify-center items-center md:hidden">
           <div className="relative">
             <img
-              src="src/assets/photo.jpeg"
+              src={photo}
               alt="Basavaraj's Photo"
               width="260"
               height="260"
@@ -74,7 +78,7 @@ const Home = () => {
               className="transition transform hover:scale-125">
               <img
                 className="h-12 w-12 p-2 rounded-full bg-gray-300 hover:bg-red-400 shadow-lg transition-all duration-300"
-                src="src/assets/mail.png"
+                src={mail}
                 alt="Mail Icon"
               />
             </a>
@@ -84,7 +88,7 @@ const Home = () => {
               className="transition transform hover:scale-125">
               <img
                 className="h-12 w-12 p-2 rounded-full bg-gray-300 hover:bg-blue-500 shadow-lg transition-all duration-300"
-                src="src/assets/linkedin.png"
+                src={linkedin}
                 alt="LinkedIn Icon"
               />
             </a>
@@ -94,7 +98,7 @@ const Home = () => {
               className="transition transform hover:scale-125">
               <img
                 className="h-12 w-12 p-2 rounded-full bg-gray-300 hover:bg-gray-50 shadow-lg transition-all duration-300"
-                src="src/assets/git.png"
+                src={git}
                 alt="GitHub Icon"
               />
             </a>
@@ -105,7 +109,7 @@ const Home = () => {
         <div className="relative justify-center items-center hidden md:flex">
           <div className="relative">
             <img
-              src="src/assets/photo.jpeg"
+              src={photo}
               alt="Basavaraj's Photo"
               width="400"
               height="400"

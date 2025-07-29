@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
+import code from "../../assets/codeDebug.jpg";
+import quiz from "../../assets/quiz.jpg";
+import sih from "../../assets/sih.png";
 
 const content = [
   {
@@ -11,7 +14,7 @@ const content = [
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <img
-          src="src/assets/codeDebug.jpg"
+          src={code}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -27,7 +30,7 @@ const content = [
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <img
-          src="src/assets/quiz.jpg"
+          src={quiz}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -44,7 +47,7 @@ const content = [
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <img
-          src="src/assets/sih.png"
+          src={sih}
           width={300}
           height={300}
           className="h-full w-full object-cover"

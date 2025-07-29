@@ -4,6 +4,7 @@ import Award from "../components/useableComponents/Award";
 import ScrollFloat from "../components/ui/ScrollFloat.jsx";
 import { motion } from "motion/react";
 import { LampContainer } from "../components/ui/lamp.jsx";
+import photo2 from "../assets/photo2.png";
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              src="src/assets/photo2.png"
+              src={photo2}
               alt="Basavaraj's Photo"
               className="rounded-lg shadow-lg object-cover max-w-[280px] md:max-w-[350px]"
               loading="lazy"
