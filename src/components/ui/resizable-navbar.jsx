@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
+import logo from "../../assets/logo.png";
 
 export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
@@ -156,7 +157,7 @@ export const NavbarLogo = () => {
       href="#home"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal">
       <img
-        src="src/assets/logo.png"
+        src={logo}
         alt="logo"
         width={30}
         height={30}

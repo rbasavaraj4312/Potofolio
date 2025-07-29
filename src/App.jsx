@@ -19,6 +19,7 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import resume from "./assets/Basavaraj_Resume.pdf";
 
 function App() {
   const navItems = [
@@ -74,10 +75,7 @@ function App() {
             <NavbarLogo />
             <NavItems items={navItems} />
             <div className="flex items-center gap-4">
-              <NavbarButton
-                variant="primary"
-                download
-                href="src/assets/Basavaraj_Resume.pdf">
+              <NavbarButton variant="primary" download href={resume}>
                 Download Resume
               </NavbarButton>
             </div>
@@ -110,7 +108,7 @@ function App() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   variant="primary"
                   className="w-full"
-                  href="src/assets/Basavaraj_Resume.pdf"
+                  href={resume}
                   download>
                   Download Resume
                 </NavbarButton>
